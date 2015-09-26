@@ -67,7 +67,7 @@ UITextFieldDelegate
             for (NSDictionary *result in results) {
                 
                 NSString *locationName = [result objectForKey:@"name"];
-                NSString *addressName = [result objectForKey:@"address"];
+                NSString *addressName = [[result objectForKey:@"location"] objectForKey:@"address"];
                 
                 YelpLocationResults *beerLocation = [[YelpLocationResults alloc]init];
                 beerLocation.locations = locationName;
