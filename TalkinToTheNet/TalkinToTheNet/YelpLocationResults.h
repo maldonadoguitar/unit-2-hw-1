@@ -11,5 +11,6 @@
 @interface YelpLocationResults : NSObject
 
 @property (nonatomic) NSString *locations;
+@property (nonatomic) NSString *addresses;
 
 @end

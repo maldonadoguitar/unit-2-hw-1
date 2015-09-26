@@ -60,17 +60,19 @@ UITextFieldDelegate
         if(data != nil){
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
             
-           
-            NSArray *results = [json objectForKey:@"response"];
+           NSArray *results = [[json objectForKey:@"response"] objectForKey:@"venues"];
+            //NSDictionary *results = [json objectForKey:@"response"];
             self.searchResults = [[NSMutableArray alloc]init];
             
             for (NSDictionary *result in results) {
                 
                 NSString *locationName = [result objectForKey:@"name"];
+                NSString *addressName = [result objectForKey:@"address"];
                 
                 YelpLocationResults *beerLocation = [[YelpLocationResults alloc]init];
                 beerLocation.locations = locationName;
-               
+                beerLocation.addresses = addressName;
+
                 
                 [self.searchResults addObject:beerLocation];
                 
@@ -97,6 +99,8 @@ UITextFieldDelegate
     YelpLocationResults *currentResults = self.searchResults[indexPath.row];
     
     cell.textLabel.text = currentResults.locations;
+    cell.detailTextLabel.text = currentResults.addresses;
+
     return cell;
 }
 
