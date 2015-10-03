@@ -61,10 +61,35 @@
             </objects>
             <point key="canvasLocation" x="307" y="389"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="EYa-78-s2n">
+            <objects>
+                <viewController id="Phk-FF-vUH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eyw-Cy-Kki"/>
+                        <viewControllerLayoutGuide type="bottom" id="rgg-g1-ekb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jBP-Rq-Vxk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City and State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69w-7a-UrM">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beR-b2-HRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="1066"/>
+        </scene>
         <!--Weather-->
         <scene sceneID="ezJ-4p-MkF">
             <objects>
-                <viewController id="dr4-BH-3I2" sceneMemberID="viewController">
+                <viewController id="dr4-BH-3I2" customClass="WeatherViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H3p-uy-Gcl"/>
                         <viewControllerLayoutGuide type="bottom" id="6rT-dm-vSg"/>
@@ -72,13 +97,49 @@
                     <view key="view" contentMode="scaleToFill" id="tCr-g7-E3u">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qDt-74-oXG">
+                                <rect key="frame" x="0.0" y="195" width="600" height="356"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeatherCellIdentifier" id="5Xv-ek-JI6">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Xv-ek-JI6" id="Z6g-UU-nYW">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="city and state" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HK0-Bx-OOG">
+                                <rect key="frame" x="20" y="85" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HK0-Bx-OOG" firstAttribute="leading" secondItem="tCr-g7-E3u" secondAttribute="leadingMargin" id="3cF-Xk-PUt"/>
+                            <constraint firstItem="qDt-74-oXG" firstAttribute="top" secondItem="HK0-Bx-OOG" secondAttribute="bottom" constant="80" id="FTv-Hw-FwN"/>
+                            <constraint firstItem="6rT-dm-vSg" firstAttribute="top" secondItem="qDt-74-oXG" secondAttribute="bottom" id="N9x-uP-j1U"/>
+                            <constraint firstItem="HK0-Bx-OOG" firstAttribute="top" secondItem="H3p-uy-Gcl" secondAttribute="bottom" constant="65" id="Sch-7T-5Ox"/>
+                            <constraint firstAttribute="trailing" secondItem="qDt-74-oXG" secondAttribute="trailing" id="X52-Sf-iRK"/>
+                            <constraint firstItem="qDt-74-oXG" firstAttribute="top" secondItem="HK0-Bx-OOG" secondAttribute="bottom" constant="80" id="d2u-gU-9F7"/>
+                            <constraint firstItem="qDt-74-oXG" firstAttribute="leading" secondItem="tCr-g7-E3u" secondAttribute="leading" id="nRB-Vo-MFI"/>
+                            <constraint firstItem="qDt-74-oXG" firstAttribute="centerX" secondItem="HK0-Bx-OOG" secondAttribute="centerX" id="oxl-n8-zpL"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Weather" id="jFe-ax-hvO"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="HK0-Bx-OOG" id="e1K-4V-pJP"/>
+                        <outlet property="tableView" destination="qDt-74-oXG" id="TUj-qU-dHU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1G-Uq-DAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="751"/>
+            <point key="canvasLocation" x="1505" y="1454"/>
         </scene>
         <!--location-->
         <scene sceneID="PP9-EL-y9d">
@@ -162,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDP-Kv-57I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1653" y="-38"/>
+            <point key="canvasLocation" x="1741" y="61"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mCT-Pu-BkG">
@@ -176,11 +237,56 @@
                     <connections>
                         <segue destination="IjR-kG-oxF" kind="relationship" relationship="viewControllers" id="NnJ-Ou-Azb"/>
                         <segue destination="dr4-BH-3I2" kind="relationship" relationship="viewControllers" id="2nx-ev-HcL"/>
+                        <segue destination="2QK-Fm-oOQ" kind="relationship" relationship="viewControllers" id="RSg-h9-JCh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kx-J8-egc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="998" y="389"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="IxT-Tf-iJC">
+            <objects>
+                <viewController id="2QK-Fm-oOQ" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5gh-9P-wWg"/>
+                        <viewControllerLayoutGuide type="bottom" id="F6F-SU-mWM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="awo-1A-ntW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DuW-Tv-lM6">
+                                <rect key="frame" x="0.0" y="112" width="600" height="439"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="city and state" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGG-9r-XPV">
+                                <rect key="frame" x="20" y="61" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DuW-Tv-lM6" firstAttribute="top" secondItem="5gh-9P-wWg" secondAttribute="bottom" constant="92" id="8D6-og-uGE"/>
+                            <constraint firstItem="DuW-Tv-lM6" firstAttribute="top" secondItem="TGG-9r-XPV" secondAttribute="bottom" constant="21" id="Ser-go-av6"/>
+                            <constraint firstItem="TGG-9r-XPV" firstAttribute="leading" secondItem="awo-1A-ntW" secondAttribute="leadingMargin" id="Vam-R9-rsY"/>
+                            <constraint firstItem="TGG-9r-XPV" firstAttribute="centerX" secondItem="DuW-Tv-lM6" secondAttribute="centerX" id="dIy-HU-HAc"/>
+                            <constraint firstAttribute="trailing" secondItem="DuW-Tv-lM6" secondAttribute="trailing" id="dwj-3A-vol"/>
+                            <constraint firstItem="DuW-Tv-lM6" firstAttribute="leading" secondItem="awo-1A-ntW" secondAttribute="leading" id="k5b-Zx-ioP"/>
+                            <constraint firstItem="TGG-9r-XPV" firstAttribute="top" secondItem="5gh-9P-wWg" secondAttribute="bottom" constant="41" id="rI0-eb-hU3"/>
+                            <constraint firstItem="F6F-SU-mWM" firstAttribute="top" secondItem="DuW-Tv-lM6" secondAttribute="bottom" id="vld-FC-WFr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="GbR-ZP-BVc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="DuW-Tv-lM6" id="GnW-6I-Qvh"/>
+                        <outlet property="searchTextField" destination="TGG-9r-XPV" id="qdZ-Qd-qfa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh0-eA-ucc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="746"/>
         </scene>
     </scenes>
     <resources>

@@ -13,13 +13,20 @@
 		8D7DCD541BAF859400A92AD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DCD521BAF859400A92AD2 /* Main.storyboard */; };
 		8D7DCD561BAF859400A92AD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DCD551BAF859400A92AD2 /* Assets.xcassets */; };
 		8D7DCD591BAF859400A92AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DCD571BAF859400A92AD2 /* LaunchScreen.storyboard */; };
+		8EB73311C1148883D4FA1D45 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59270A15DF6537579F64104B /* libPods.a */; };
+		EBAE9BA01BBF663100BF95B1 /* MapAPi.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAE9B9F1BBF663100BF95B1 /* MapAPi.m */; settings = {ASSET_TAGS = (); }; };
+		EBAE9BA21BBF67AD00BF95B1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAE9BA11BBF67AD00BF95B1 /* MapKit.framework */; };
+		EBAE9BA41BBF67EE00BF95B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAE9BA31BBF67EE00BF95B1 /* CoreLocation.framework */; };
 		EBD169D11BB1DDF700E1C589 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD169D01BB1DDF700E1C589 /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
 		EBEC5E091BB1F25A00186ACB /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC5E081BB1F25A00186ACB /* LocationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		EBEC5E0C1BB1F29A00186ACB /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC5E0B1BB1F29A00186ACB /* WeatherViewController.m */; settings = {ASSET_TAGS = (); }; };
 		EBEC5E131BB317AA00186ACB /* YelpLocationResults.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC5E121BB317AA00186ACB /* YelpLocationResults.m */; settings = {ASSET_TAGS = (); }; };
+		EBEC5E631BB6F23700186ACB /* WeatherSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC5E621BB6F23700186ACB /* WeatherSearchResults.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F50F2DD620D90CD6035123E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		59270A15DF6537579F64104B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7DCD461BAF859400A92AD2 /* TalkinToTheNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkinToTheNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7DCD4A1BAF859400A92AD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D7DCD4C1BAF859400A92AD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,6 +37,11 @@
 		8D7DCD551BAF859400A92AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D7DCD581BAF859400A92AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D7DCD5A1BAF859400A92AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C521478F7E92A0219D44A55E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EBAE9B9E1BBF663100BF95B1 /* MapAPi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAPi.h; sourceTree = "<group>"; };
+		EBAE9B9F1BBF663100BF95B1 /* MapAPi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAPi.m; sourceTree = "<group>"; };
+		EBAE9BA11BBF67AD00BF95B1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EBAE9BA31BBF67EE00BF95B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EBD169CF1BB1DDF700E1C589 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		EBD169D01BB1DDF700E1C589 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		EBEC5E071BB1F25A00186ACB /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
@@ -38,6 +50,9 @@
 		EBEC5E0B1BB1F29A00186ACB /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
 		EBEC5E111BB317AA00186ACB /* YelpLocationResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpLocationResults.h; sourceTree = "<group>"; };
 		EBEC5E121BB317AA00186ACB /* YelpLocationResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpLocationResults.m; sourceTree = "<group>"; };
+		EBEC5E601BB6E27800186ACB /* searchResultDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchResultDelegate.h; sourceTree = "<group>"; };
+		EBEC5E611BB6F23700186ACB /* WeatherSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherSearchResults.h; sourceTree = "<group>"; };
+		EBEC5E621BB6F23700186ACB /* WeatherSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherSearchResults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +60,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAE9BA41BBF67EE00BF95B1 /* CoreLocation.framework in Frameworks */,
+				EBAE9BA21BBF67AD00BF95B1 /* MapKit.framework in Frameworks */,
+				8EB73311C1148883D4FA1D45 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4F7F699DB75BA1563C5F5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F50F2DD620D90CD6035123E /* Pods.debug.xcconfig */,
+				C521478F7E92A0219D44A55E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		354F4149D168733CB106B6ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBAE9BA31BBF67EE00BF95B1 /* CoreLocation.framework */,
+				EBAE9BA11BBF67AD00BF95B1 /* MapKit.framework */,
+				59270A15DF6537579F64104B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D7DCD3D1BAF859400A92AD2 = {
 			isa = PBXGroup;
 			children = (
 				8D7DCD481BAF859400A92AD2 /* TalkinToTheNet */,
 				8D7DCD471BAF859400A92AD2 /* Products */,
+				0E4F7F699DB75BA1563C5F5B /* Pods */,
+				354F4149D168733CB106B6ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +112,8 @@
 				8D7DCD521BAF859400A92AD2 /* Main.storyboard */,
 				8D7DCD4C1BAF859400A92AD2 /* AppDelegate.h */,
 				8D7DCD4D1BAF859400A92AD2 /* AppDelegate.m */,
-				EBEC5E101BB1F63600186ACB /* Oktoberfest Search */,
+				EBEC5E5F1BB6E24100186ACB /* protocol */,
+				EBEC5E101BB1F63600186ACB /* Map */,
 				EBEC5E0D1BB1F33E00186ACB /* Location */,
 				EBEC5E0E1BB1F35900186ACB /* Weather */,
 				EBEC5E0F1BB1F38300186ACB /* API */,
@@ -109,6 +149,8 @@
 			children = (
 				EBEC5E0A1BB1F29A00186ACB /* WeatherViewController.h */,
 				EBEC5E0B1BB1F29A00186ACB /* WeatherViewController.m */,
+				EBEC5E611BB6F23700186ACB /* WeatherSearchResults.h */,
+				EBEC5E621BB6F23700186ACB /* WeatherSearchResults.m */,
 			);
 			name = Weather;
 			sourceTree = "<group>";
@@ -122,13 +164,23 @@
 			name = API;
 			sourceTree = "<group>";
 		};
-		EBEC5E101BB1F63600186ACB /* Oktoberfest Search */ = {
+		EBEC5E101BB1F63600186ACB /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				8D7DCD4F1BAF859400A92AD2 /* ViewController.h */,
 				8D7DCD501BAF859400A92AD2 /* ViewController.m */,
+				EBAE9B9E1BBF663100BF95B1 /* MapAPi.h */,
+				EBAE9B9F1BBF663100BF95B1 /* MapAPi.m */,
 			);
-			name = "Oktoberfest Search";
+			name = Map;
+			sourceTree = "<group>";
+		};
+		EBEC5E5F1BB6E24100186ACB /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EBEC5E601BB6E27800186ACB /* searchResultDelegate.h */,
+			);
+			name = protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D7DCD5D1BAF859400A92AD2 /* Build configuration list for PBXNativeTarget "TalkinToTheNet" */;
 			buildPhases = (
+				E6FD2ECBCF674DAA88F604B1 /* Check Pods Manifest.lock */,
 				8D7DCD421BAF859400A92AD2 /* Sources */,
 				8D7DCD431BAF859400A92AD2 /* Frameworks */,
 				8D7DCD441BAF859400A92AD2 /* Resources */,
+				CE604BFA53E4D43542ABE815 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,14 +250,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE604BFA53E4D43542ABE815 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6FD2ECBCF674DAA88F604B1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D7DCD421BAF859400A92AD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EBD169D11BB1DDF700E1C589 /* APIManager.m in Sources */,
+				EBEC5E631BB6F23700186ACB /* WeatherSearchResults.m in Sources */,
 				EBEC5E0C1BB1F29A00186ACB /* WeatherViewController.m in Sources */,
 				8D7DCD511BAF859400A92AD2 /* ViewController.m in Sources */,
+				EBAE9BA01BBF663100BF95B1 /* MapAPi.m in Sources */,
 				8D7DCD4E1BAF859400A92AD2 /* AppDelegate.m in Sources */,
 				8D7DCD4B1BAF859400A92AD2 /* main.m in Sources */,
 				EBEC5E131BB317AA00186ACB /* YelpLocationResults.m in Sources */,
@@ -315,6 +404,7 @@
 		};
 		8D7DCD5E1BAF859400A92AD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F50F2DD620D90CD6035123E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TalkinToTheNet/Info.plist;
@@ -327,6 +417,7 @@
 		};
 		8D7DCD5F1BAF859400A92AD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C521478F7E92A0219D44A55E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TalkinToTheNet/Info.plist;
